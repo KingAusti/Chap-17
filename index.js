@@ -2,7 +2,7 @@ const Benchmark = require('benchmark');
 const { bubbleSort, quickSort } = require('./sort');
 
 const numbers = [];
-for (let i = 0; i < 40000; i++) {
+for (let i = 0; i < 10000; i++) {
   numbers.push(Math.floor(Math.random() * 10000) + 1);
 }
 

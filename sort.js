@@ -1,4 +1,9 @@
 const quickSort = (arr) => {
+    //dont quick sort a small array; return it immediately
+    if(arr.length <= 1) {
+        return arr;
+    }
+    
     // use first index as the pivot point
     const pivot = arr[0];
     const left = [];
@@ -10,11 +15,14 @@ const quickSort = (arr) => {
         if (arr[i] <= pivot) {
             left.push(arr[i]);
         }
+        else {
+            right.push(arr[i]);
+        }
     }
 
     //merge arrays and pivot together
-    return left.concat(pivot, right);
-}
+    return quickSort(left).concat(pivot, quickSort(right));
+};
 
 const bubbleSort = (arr) => {
     let sorted = false;
