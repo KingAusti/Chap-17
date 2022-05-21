@@ -1,5 +1,5 @@
 const Benchmark = require('benchmark');
-const {mostDuplicates} = require('./dupes');
+const {mostDuplicates, optimizedDuplicates} = require('./dupes');
 
 const numbers = [];
 for (let i = 0; i <= 10000; i++) {
@@ -11,6 +11,9 @@ const suite = new Benchmark.Suite;
 suite
   .add('duplicates test', function(){
     mostDuplicates(numbers);
+  })
+  .add('optimized test', function() {
+    optimizedDuplicates(numbers);
   })
   .on('complete', function(){
     this.forEach(result => console
