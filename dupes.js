@@ -23,4 +23,4 @@ const mostDuplicates = (arr) => {
 
 };
 
-console.log(mostDuplicates(numbers));
+module.exports = {mostDuplicates};
