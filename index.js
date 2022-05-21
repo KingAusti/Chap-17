@@ -1,5 +1,5 @@
 const Benchmark = require('benchmark');
-const { bubbleSort } = require('./sort');
+const { bubbleSort, quickSort } = require('./sort');
 
 const numbers = [];
 for (let i = 0; i < 40000; i++) {
