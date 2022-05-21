@@ -1,0 +1,22 @@
+{
+  "name": "chap-17",
+  "version": "1.0.0",
+  "description": "This is random collection of algorithms from Chap 17 of UofO bootcamp<br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingAusti/Chap-17.git"
+  },
+  "author": "KingAusti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KingAusti/Chap-17/issues"
+  },
+  "homepage": "https://github.com/KingAusti/Chap-17#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4"
+  }
+}
